@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/fbc/FreeBASIC-1.10.1/Binaries-Windows/FreeBASIC-1.10.1-winlibs-gcc-9.3.0.7z",
-            "hash": "skip",
+            "hash": "",
             "extract_dir": "FreeBASIC-1.10.1-winlibs"
         }
     },
