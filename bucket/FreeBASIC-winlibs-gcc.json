@@ -1,5 +1,5 @@
 {
-    "version": "1.10.1",
+    "version": "1.10.0",
     "description": "BASIC compiler for Windows with both 32-bit and 64-bit support",
     "homepage": "https://www.freebasic.net",
     "license": "GPL-2.0-or-later",
