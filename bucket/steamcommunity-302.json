@@ -5,7 +5,7 @@
     "license": "Freeware",
     "url": "https://www.dogfight360.com/blog/wp-content/uploads/2025/04/steamcommunity_302_AMD64_V13.0.04.zip",
     "hash": "0c1be381ae8c5dd5e82eac29c45b5f03341a4c4838aebaf6f1fa55f9ee13d592",
-    "extract_dir": "steamcommunity_302_V13.0.02/Steamcommunity_302",
+    "extract_dir": "steamcommunity_302_AMD64_V13.0.02/Steamcommunity_302",
     "shortcuts": [
         [
             "steamcommunity_302.exe",
@@ -19,6 +19,6 @@
     },
     "autoupdate": {
         "url": "https://www.dogfight360.com/blog/wp-content/uploads/$matchDate/steamcommunity_302_AMD64_V$version$matchSuffix.zip",
-        "extract_dir": "steamcommunity_302_V$version/Steamcommunity_302"
+        "extract_dir": "steamcommunity_302_AMD64_V$version/Steamcommunity_302"
     }
 }
