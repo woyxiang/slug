@@ -1,5 +1,5 @@
 {
-    "version": "v1.0.0-beta.1",
+    "version": "1.0.0-beta.1",
     "description": "屎山代码检测器，评估代码的”屎山等级“，并输出美观的终端报告。",
     "homepage": "https://github.com/Done-0/fuck-u-code",
     "license": "MIT",
@@ -17,15 +17,15 @@
     "bin": "fuck-u-code.exe",
     "checkver": {
         "url": "https://github.com/Done-0/fuck-u-code",
-        "regex": "\\/releases\\/tag\\/((?:v|V)?[\\d]+(?:\\.[\\d]+)*(?:-[\\w.-]+)?)"
+        "regex": "\\/releases\\/tag\\/(?:v|V)?([\\d]+(?:\\.[\\d]+)*(?:-[\\w.-]+)?)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Done-0/fuck-u-code/releases/download/$version/fuck-u-code-windows-amd64.exe"
+                "url": "https://github.com/Done-0/fuck-u-code/releases/download/v$version/fuck-u-code-windows-amd64.exe"
             },
             "arm64": {
-                "url": "https://github.com/Done-0/fuck-u-code/releases/download/$version/fuck-u-code-windows-arm64.exe"
+                "url": "https://github.com/Done-0/fuck-u-code/releases/download/v$version/fuck-u-code-windows-arm64.exe"
             }
         }
     }
