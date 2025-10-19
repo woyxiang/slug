@@ -18,7 +18,13 @@
             "CS Demo Manager"
         ]
     ],
-    "suggest": "main/postgresql@16.3",
+    "suggest": {
+        "The database": "main/postgresql"
+    },
+    "notes": [
+        "Reading the step by step instructions here is highly recommended https://cs-demo-manager.com/docs/installation#step-1-the-database ",
+        "CS:DM requires an accessible PostgreSQL database to work properly"
+    ],
     "post_uninstall": [
         "echo ''",
         "echo Notes",
