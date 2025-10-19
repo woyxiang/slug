@@ -22,7 +22,7 @@
         "The database": "main/postgresql"
     },
     "notes": [
-        "https://cs-demo-manager.com/docs/installation#step-1-the-database",
+        "https://cs-demo-manager.com/docs/installation",
         "Reading the step by step instructions here is highly recommended.",
         "CS:DM requires an accessible PostgreSQL database to work properly."
     ],
