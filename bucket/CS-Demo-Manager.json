@@ -18,6 +18,7 @@
             "CS Demo Manager"
         ]
     ],
+    "suggest": "main/postgresql@16.3",
     "post_uninstall": [
         "echo ''",
         "echo Notes",
