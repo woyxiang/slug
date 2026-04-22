@@ -8,12 +8,11 @@
     "installer": {
         "script": [
             "ensure ~/.config/pwsh/completions",
-            "Remove-Item $dir\\connecttest.txt",
-            "easytier-cli gen-autocomplete powershell > ~/.config/pwsh/completions/easytier-cli-completion.ps1"
+            "cp $dir\\scoop-completion.ps1 > ~/.config/pwsh/completions/scoop-completion.ps1"
         ]
     },
     "uninstaller": {
-        "script": "Remove-Item ~\\.config\\pwsh\\completions\\easytier-cli-completion.ps1 -ErrorAction SilentlyContinue"
+        "script": "Remove-Item ~\\.config\\pwsh\\completions\\scoop-completion.ps1 -ErrorAction SilentlyContinue"
     },
     "checkver": {
         "url":"https://github.com/woyxiang/scoop-completion/commits/master/scoop-completion.ps1.atom",
