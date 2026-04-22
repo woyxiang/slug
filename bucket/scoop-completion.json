@@ -2,8 +2,8 @@
     "version": "0.2020.05.24",
     "description": "A Scoop tab completion module for PowerShell",
     "homepage": "https://github.com/woyxiang/scoop-completion   ",
-    "url": "https://raw.githubusercontent.com/woyxiang/scoop-completion/9bb5b37f68d8f28038d3303377a61972ae8b21c3/scoop-completion.ps1",
-    "hash": "5e9a7996fe94d7be10595d7133748760bf8348198b71b7a50fd8affaa980ac61",
+    "url": "https://github.com/woyxiang/scoop-completion/raw/refs/heads/master/src/scoop-completion.ps1",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "license": "MIT",
     "installer": {
         "script": [
