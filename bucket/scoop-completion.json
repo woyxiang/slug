@@ -3,14 +3,14 @@
     "description": "A Scoop tab completion module for PowerShell",
     "homepage": "https://github.com/woyxiang/scoop-completion   ",
     "url": "https://github.com/woyxiang/scoop-completion/raw/refs/heads/master/src/scoop-completion.ps1",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hash": "61F9ECFD50582A3E835130AED823DBE266A4B50643C5ACE866B7F6AFAC717643",
     "license": "MIT",
-    "installer": {
-        "script": [
+    "post_install":
+        [
             "ensure ~/.config/pwsh/completions",
-            "cp $dir\\scoop-completion.ps1 > ~/.config/pwsh/completions/scoop-completion.ps1"
+            "cp $dir\\scoop-completion.ps1 ~/.config/pwsh/completions/scoop-completion.ps1"
         ]
-    },
+    ,
     "uninstaller": {
         "script": "Remove-Item ~\\.config\\pwsh\\completions\\scoop-completion.ps1 -ErrorAction SilentlyContinue"
     },
