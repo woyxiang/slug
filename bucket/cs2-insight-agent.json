@@ -11,8 +11,7 @@
     },
     "extract_dir": "$PLUGINSDIR",
     "pre_install": [
-        "pwd",
-        "Get-ChildItem $dir -Recurse | Where-Object { $_.Extension -ne \".7z\" } | Remove-Item -Force",
+        "Remove-Item $dir\\* -Exclude *.7z",
         "Expand-7zipArchive -Path $dir\\app-64.7z -DestinationPath $dir -Removal"
     ],
     "installer": {
