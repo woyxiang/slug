@@ -16,10 +16,13 @@
     ],
     "installer": {
         "script": [
-            "$folders = @(\"$HOME\\.csdm\", \"$env:APPDATA\\cs-demo-manager\")",
-            "foreach ($folder in $folders) {",
-            "    $targetPath = \"$persist_dir\\$folder\"",
-            "    $configPath = \"$folder\"",
+            "$mappings = @(",
+            "    @{ Config = \"$HOME\\.csdm\"; Target = \"$persist_dir\\.csdm\" },",
+            "    @{ Config = \"$env:APPDATA\\cs-demo-manager\"; Target = \"$persist_dir\\cs-demo-manager\" }",
+            ")",
+            "foreach ($map in $mappings) {",
+            "    $targetPath = $map.Target",
+            "    $configPath = $map.Config",
             "    ensure $targetPath | Out-Null",
             "    $linkType = (Get-Item -Path $configPath -ErrorAction SilentlyContinue).LinkType",
             "    if (Test-Path $configPath) {",
