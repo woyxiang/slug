@@ -10,6 +10,12 @@
         }
     },
     "bin": "AlwaysShadow.exe",
+    "shortcuts": [
+        [
+            "AlwaysShadow.exe",
+            "AlwaysShadow"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/Verpous/AlwaysShadow"
     },
