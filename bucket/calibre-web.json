@@ -1,8 +1,8 @@
 {
-    "version": "0.6.25",
+    "version": "0.6.27",
     "license": "Freeware",
-    "url": "https://github.com/janeczku/calibre-web/releases/download/0.6.25/Calibre-Web-v0625.exe",
-    "hash": "19420501d2c6ac9c154067e6af31302899d0af107eeb839d6f8d3e17dd9a8d44",
+    "url": "https://github.com/janeczku/calibre-web/releases/download/0.6.27/Calibre-Web-v0627.exe",
+    "hash": "f99fbca8aaeb63bbe2015ef47c64a2a64e7293ff60140a0589987bea7e4cdf6c",
     "homepage": "https://github.com/janeczku/calibre-web",
     "innosetup": true,
     "bin": "calibreweb.exe",
