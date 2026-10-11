@@ -92,7 +92,7 @@ Construct the JSON following [manifest-schema.md](manifest-schema.md). Key decis
 2. **Field consistency** — Verify:
    - `version` matches the download URL
    - `bin` path exists in the archive
-   - `autoupdate` URL templates produce valid URLs when `$version` is substituted
+   - `autoupdate` URL templates produce valid URLs when `$version`/`$matchX` are substituted (note: `checkver: "github"` produces no `$matchX` — see [autoupdate.md](autoupdate.md))
    - `hash` URL is reachable
    - `checkver` can actually find the version
 3. **Test with `checkver.ps1`** — From the bucket repository, run the version checker:
@@ -105,7 +105,12 @@ Construct the JSON following [manifest-schema.md](manifest-schema.md). Key decis
    .\bin\checkver.ps1 <app> -u
    ```
    Then verify the updated manifest has correct `url`, `hash`, and `extract_dir` values.
-4. **Test install** (if Scoop is available):
+4. **Force-expand `autoupdate` even when the version is unchanged** — a plain check only validates version detection; the `autoupdate` templates are evaluated for real only when a newer version is found. Force one expansion so broken templates surface now instead of failing silently at the next upstream release:
+   ```powershell
+   .\bin\checkver.ps1 <app> -f
+   ```
+   `-f` re-runs the substitution and hash step even when the version is unchanged. If the generated URL 404s (for example it references `$matchX` variables that `checkver` never produced), the template is wrong.
+5. **Test install** (if Scoop is available):
    ```powershell
    scoop install bucket\<app>.json
    ```

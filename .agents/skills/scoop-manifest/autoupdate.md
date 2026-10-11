@@ -19,6 +19,33 @@ If the project uses GitHub Releases, set `homepage` to the repo URL and `checkve
 
 This matches tags like `/releases/tag/(?:v|V)?([\d.]+)`. Pre-releases are ignored.
 
+> **Warning — no capture groups in this mode.** The shorthand yields only `$version` (and its derivatives). Any `$matchX` placeholder in `autoupdate` is **empty**, and Scoop will not warn you: the template silently expands to a broken URL that 404s at update time — possibly weeks after the manifest was written and validated.
+
+#### When the asset name contains more than the version
+
+If the asset filename embeds a field that is *not* part of the tag — build number, timestamp, short hash — the shorthand cannot fill it. This looks valid but breaks on the next upstream release:
+
+```json
+"checkver": "github",
+"autoupdate": {
+    "url": "https://github.com/user/repo/releases/download/v$match1/app-$match1-$match2-windows-x64.zip"
+}
+```
+
+Match the release asset itself instead, capturing every variable field. The first capture group doubles as the new version:
+
+```json
+"checkver": {
+    "url": "https://api.github.com/repos/user/repo/releases/latest",
+    "regex": "app-([\\d.]+)-(\\d+)-windows-x64\\.zip"
+},
+"autoupdate": {
+    "url": "https://github.com/user/repo/releases/download/v$match1/app-$match1-$match2-windows-x64.zip"
+}
+```
+
+Here `$match1` is the version and `$match2` the build number. `releases/latest` returns only the latest non-draft, non-prerelease release, mirroring the shorthand's behavior.
+
 ### Regex on homepage
 
 Match a version pattern on the homepage HTML:

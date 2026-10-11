@@ -4,7 +4,7 @@ metadata:
     github-path: skills/scoop-manifest
     github-ref: refs/heads/master
     github-repo: https://github.com/woyxiang/skills
-    github-tree-sha: 0a567ff1307a794c31731e950cc28037df7c3894
+    github-tree-sha: 27a9d6dd3e42051765fff49381f032b71acefd10
 name: scoop-manifest
 ---
 # Scoop Manifest
