@@ -1,10 +1,10 @@
 {
-    "version": "3.1.17",
+    "version": "3.1.19",
     "description": "纯粹直播:哔哩哔哩/虎牙/斗鱼/快手/抖音/网易cc/YY直播/Twitch直播/SOOP直播/M38自定义源应有尽有。",
     "homepage": "https://github.com/liuchuancong/pure_live",
     "license": "AGPL-3.0-only",
-    "url": "https://github.com/liuchuancong/pure_live/releases/download/v3.1.17/PureLive-3.1.17-4106-windows-x64-portable.zip",
-    "hash": "2f0e1d22ade2a30300f851c9061c6e2ced67dafbd1e954fa2f9e421dcf3afe9f",
+    "url": "https://github.com/liuchuancong/pure_live/releases/download/v3.1.19/PureLive-3.1.19-4108-windows-x64-portable.zip",
+    "hash": "b87a93a8a1fbe1f6dbd5bfa24f0bfe45ebe0e7c68249707870613d55c0694f6f",
     "persist": [
         "AppData",
         "data"
@@ -15,7 +15,10 @@
             "纯粹直播"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/liuchuancong/pure_live/releases/latest",
+        "regex": "PureLive-([\\d.]+)-(\\d+)-windows-x64-portable\\.zip"
+    },
     "autoupdate": {
         "url": "https://github.com/liuchuancong/pure_live/releases/download/v$match1/PureLive-$match1-$match2-windows-x64-portable.zip"
     }
