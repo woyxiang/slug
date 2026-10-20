@@ -29,9 +29,9 @@
         "New-Item $configPath -ItemType Junction -Target $targetPath | Out-Null"
     ],
     "notes": [
-        "应用自带的自动更新已被禁用，请用 'scoop update noutube' 升级",
-        "登录状态/缓存已通过 junction 重定向到 $persist_dir\\NouTube",
-        "下载的视频/音频文件保存在系统下载目录，不受 Scoop 管理"
+        "The built-in auto-update is disabled, upgrade with 'scoop update noutube'",
+        "Login state and caches are redirected to $persist_dir\\NouTube via a junction",
+        "Downloaded video/audio files are saved to the system Downloads folder and are not managed by Scoop"
     ],
     "shortcuts": [
         [

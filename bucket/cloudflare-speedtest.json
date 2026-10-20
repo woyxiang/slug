@@ -37,11 +37,11 @@
         }
     },
     "notes": [
-        "脚本【cfst_host.bat】的作用是 CFST 测速后获取最快 IP 并替换 Hosts 中的 Cloudflare CDN IP。",
-        "使用前请先阅读：https://github.com/XIU2/CloudflareSpeedTest/discussions/312#discussioncomment-5161576",
+        "The script `cfst_host.bat` takes the fastest IP found by CFST and replaces the Cloudflare CDN IP in the hosts file.",
+        "Read this before use: https://github.com/XIU2/CloudflareSpeedTest/discussions/312#discussioncomment-5161576",
         " ",
-        "脚本【cfst_3proxy.bat】的作用为 CFST 测速后获取最快 IP 并替换 3Proxy 配置文件中的 Cloudflare CDN IP。",
-        "可以把所有 Cloudflare CDN IP 都重定向至最快 IP，实现一劳永逸的加速所有使用 Cloudflare CDN 的网站（不需要一个个添加域名到 Hosts 了）。",
-        "使用前请先阅读：https://github.com/XIU2/CloudflareSpeedTest/discussions/71"
+        "The script `cfst_3proxy.bat` takes the fastest IP found by CFST and replaces the Cloudflare CDN IP in the 3Proxy config file.",
+        "Redirecting every Cloudflare CDN IP to the fastest one accelerates all sites behind Cloudflare CDN once and for all (no need to add domains to the hosts file one by one).",
+        "Read this before use: https://github.com/XIU2/CloudflareSpeedTest/discussions/71"
     ]
 }

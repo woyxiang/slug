@@ -31,8 +31,8 @@
         ]
     ],
     "notes": [
-        "设置、登录状态、播放历史、默认下载目录等数据保存在 %APPDATA%\\com.example\\piliplus，安装时已通过 junction 重定向到 Scoop persist 目录",
-        "崩溃日志写入 %USERPROFILE%\\Documents\\.pili_logs.json"
+        "Settings, login state, playback history and the default download directory are stored in %APPDATA%\\com.example\\piliplus, which is redirected to the Scoop persist directory by a junction on install",
+        "Crash logs are written to %USERPROFILE%\\Documents\\.pili_logs.json"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases/latest",
