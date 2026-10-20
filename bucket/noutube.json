@@ -30,7 +30,6 @@
     ],
     "notes": [
         "The built-in auto-update is disabled, upgrade with 'scoop update noutube'",
-        "Login state and caches are redirected to $persist_dir\\NouTube via a junction",
         "Downloaded video/audio files are saved to the system Downloads folder and are not managed by Scoop"
     ],
     "shortcuts": [
